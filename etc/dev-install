@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# Consolidated installation script for use by both Travis and humans.
-#
+
 # First installs a known-good version of pip, then any requirements
 # specified in the EXTERNAL_REQUIREMENTS environment variable (e.g.,
 # coveralls); then installs the project requirements, constrained by
@@ -9,7 +8,7 @@
 #
 # Forwards positional arguments to all invocations of pip install.
 
-# Travis' env command doesn't permit options in the shebang line, so
+# env command doesn't permit options in script, so
 # set them here.
 set -euvxo pipefail
 
